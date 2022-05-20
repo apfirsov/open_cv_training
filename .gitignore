@@ -147,3 +147,5 @@ dmypy.json
 
 #my ignore
 *.draft.py
+draft.py
+draft
