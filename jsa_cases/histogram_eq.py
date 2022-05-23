@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
@@ -47,10 +48,7 @@ def equalize(img, cdf=None, use_cv_equ=False):
 
 	return cdf[img]  # не понимаю, как тут проходит преобразование
 
-
-if __name__ == '__main__':
-
-	img_path = 'images/img1.jpg'
+def main(img_path):
 
 	# Читаем изображение в cv
 	img = cv.imread(img_path, 0)
@@ -76,7 +74,14 @@ if __name__ == '__main__':
 		cv.resize(img2, (w_min, h_min)),
 		cv.resize(img3, (w_min, h_min))
 	])
-	cv.imshow('result', union_img)
+	cv.imshow(img_path, union_img)
 	cv.waitKey(0)
+
+
+if __name__ == '__main__':
+
+	for filename in os.listdir('images'):
+		main(f'images/{filename}')
+
 
 
