@@ -1,8 +1,8 @@
 import cv2 as cv
 import numpy as np
 
-def show(img, tittle='result'):
-	cv.imshow(tittle, img)
+def show(img, title='result'):
+	cv.imshow(title, img)
 	cv.waitKey(0)
 
 def image_samp(image_path):
