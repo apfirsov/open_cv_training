@@ -8,7 +8,7 @@ def show(img, title='result'):
 def image_samp(image_path):
 
 	img = cv.imread(image_path)
-	#show(img)
+	show(img)
 
 	print(img.shape)
 	new_img = cv.resize(img, (img.shape[1] // 2, img.shape[0] // 2))
@@ -25,6 +25,7 @@ def image_samp(image_path):
 	new_img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 	# в бинарный формат
 	new_img = cv.Canny(new_img, 200, 200)
+	show(new_img)
 	# увеличиваем границы
 	kernel = np.ones((5, 5), dtype='uint8')
 	new_img = cv.dilate(new_img, kernel, iterations=1)

@@ -150,3 +150,6 @@ dmypy.json
 draft.py
 draft
 itproger_cases/videos
+videos
+*.notes.txt
+notes.txt

@@ -82,6 +82,3 @@ if __name__ == '__main__':
 
 	for filename in os.listdir('images'):
 		main(f'images/{filename}')
-
-
-
