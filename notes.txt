@@ -29,4 +29,10 @@ neiqbros = defoult 3 - 5
  Метаинформация кадра. Заблюрить
  положение бокса в кадре -
 
+pandas - histplot или boxplot
+https://github.com/tesseract-ocr/tesseract
+https://github.com/JaidedAI/EasyOCR
+Допилить график
+Блюр
+
 
